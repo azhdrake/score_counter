@@ -30,6 +30,7 @@ namespace ScoreCounter
         txtAverage.Text = scoreAverage.ToString();
         txtTotal.Text = scoreTotal.ToString();
         txtCount.Text = scoreCount.ToString();
+        txtAdd.Text = "";
       }
       else
       {
