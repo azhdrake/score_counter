@@ -21,15 +21,21 @@ namespace ScoreCounter
 
     private void buttAdd_Click(object sender, EventArgs e)
     {
+      // Ensuring valid input
       bool addValid = double.TryParse(txtAdd.Text, out double toAdd);
       if (addValid)
       {
+        //doing the caculations
         scoreTotal += toAdd;
         scoreCount++;
         double scoreAverage = scoreTotal / scoreCount;
+
+        //desplaying the caculations
         txtAverage.Text = scoreAverage.ToString();
         txtTotal.Text = scoreTotal.ToString();
         txtCount.Text = scoreCount.ToString();
+
+        //resetting for more input.
         txtAdd.Text = "";
         txtAdd.Focus();
       }
@@ -41,6 +47,7 @@ namespace ScoreCounter
 
     private void buttClear_Click(object sender, EventArgs e)
     {
+      //resetting everything
       scoreTotal = 0;
       scoreCount = 0;
       txtAverage.Text = "";
