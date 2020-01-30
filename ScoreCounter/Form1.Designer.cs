@@ -28,10 +28,10 @@
     /// </summary>
     private void InitializeComponent()
     {
-      this.textBox1 = new System.Windows.Forms.TextBox();
-      this.textBox2 = new System.Windows.Forms.TextBox();
-      this.textBox3 = new System.Windows.Forms.TextBox();
-      this.textBox4 = new System.Windows.Forms.TextBox();
+      this.txtAdd = new System.Windows.Forms.TextBox();
+      this.txtAverage = new System.Windows.Forms.TextBox();
+      this.txtCount = new System.Windows.Forms.TextBox();
+      this.txtTotal = new System.Windows.Forms.TextBox();
       this.buttAdd = new System.Windows.Forms.Button();
       this.buttClear = new System.Windows.Forms.Button();
       this.buttExit = new System.Windows.Forms.Button();
@@ -41,36 +41,39 @@
       this.label4 = new System.Windows.Forms.Label();
       this.SuspendLayout();
       // 
-      // textBox1
+      // txtAdd
       // 
-      this.textBox1.Location = new System.Drawing.Point(134, 43);
-      this.textBox1.Name = "textBox1";
-      this.textBox1.Size = new System.Drawing.Size(100, 31);
-      this.textBox1.TabIndex = 0;
+      this.txtAdd.Location = new System.Drawing.Point(134, 43);
+      this.txtAdd.Name = "txtAdd";
+      this.txtAdd.Size = new System.Drawing.Size(100, 31);
+      this.txtAdd.TabIndex = 0;
       // 
-      // textBox2
+      // txtAverage
       // 
-      this.textBox2.Location = new System.Drawing.Point(134, 222);
-      this.textBox2.Name = "textBox2";
-      this.textBox2.ReadOnly = true;
-      this.textBox2.Size = new System.Drawing.Size(100, 31);
-      this.textBox2.TabIndex = 1;
+      this.txtAverage.Location = new System.Drawing.Point(134, 222);
+      this.txtAverage.Name = "txtAverage";
+      this.txtAverage.ReadOnly = true;
+      this.txtAverage.Size = new System.Drawing.Size(100, 31);
+      this.txtAverage.TabIndex = 1;
+      this.txtAverage.TabStop = false;
       // 
-      // textBox3
+      // txtCount
       // 
-      this.textBox3.Location = new System.Drawing.Point(134, 161);
-      this.textBox3.Name = "textBox3";
-      this.textBox3.ReadOnly = true;
-      this.textBox3.Size = new System.Drawing.Size(100, 31);
-      this.textBox3.TabIndex = 2;
+      this.txtCount.Location = new System.Drawing.Point(134, 161);
+      this.txtCount.Name = "txtCount";
+      this.txtCount.ReadOnly = true;
+      this.txtCount.Size = new System.Drawing.Size(100, 31);
+      this.txtCount.TabIndex = 2;
+      this.txtCount.TabStop = false;
       // 
-      // textBox4
+      // txtTotal
       // 
-      this.textBox4.Location = new System.Drawing.Point(134, 101);
-      this.textBox4.Name = "textBox4";
-      this.textBox4.ReadOnly = true;
-      this.textBox4.Size = new System.Drawing.Size(100, 31);
-      this.textBox4.TabIndex = 3;
+      this.txtTotal.Location = new System.Drawing.Point(134, 101);
+      this.txtTotal.Name = "txtTotal";
+      this.txtTotal.ReadOnly = true;
+      this.txtTotal.Size = new System.Drawing.Size(100, 31);
+      this.txtTotal.TabIndex = 3;
+      this.txtTotal.TabStop = false;
       // 
       // buttAdd
       // 
@@ -126,7 +129,6 @@
       this.label3.Size = new System.Drawing.Size(69, 25);
       this.label3.TabIndex = 9;
       this.label3.Text = "Count";
-      this.label3.Click += new System.EventHandler(this.label3_Click);
       // 
       // label4
       // 
@@ -149,10 +151,10 @@
       this.Controls.Add(this.buttExit);
       this.Controls.Add(this.buttClear);
       this.Controls.Add(this.buttAdd);
-      this.Controls.Add(this.textBox4);
-      this.Controls.Add(this.textBox3);
-      this.Controls.Add(this.textBox2);
-      this.Controls.Add(this.textBox1);
+      this.Controls.Add(this.txtTotal);
+      this.Controls.Add(this.txtCount);
+      this.Controls.Add(this.txtAverage);
+      this.Controls.Add(this.txtAdd);
       this.Name = "Form1";
       this.Text = "Score Counter";
       this.ResumeLayout(false);
@@ -162,10 +164,10 @@
 
     #endregion
 
-    private System.Windows.Forms.TextBox textBox1;
-    private System.Windows.Forms.TextBox textBox2;
-    private System.Windows.Forms.TextBox textBox3;
-    private System.Windows.Forms.TextBox textBox4;
+    private System.Windows.Forms.TextBox txtAdd;
+    private System.Windows.Forms.TextBox txtAverage;
+    private System.Windows.Forms.TextBox txtCount;
+    private System.Windows.Forms.TextBox txtTotal;
     private System.Windows.Forms.Button buttAdd;
     private System.Windows.Forms.Button buttClear;
     private System.Windows.Forms.Button buttExit;
