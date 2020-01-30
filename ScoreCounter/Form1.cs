@@ -31,6 +31,7 @@ namespace ScoreCounter
         txtTotal.Text = scoreTotal.ToString();
         txtCount.Text = scoreCount.ToString();
         txtAdd.Text = "";
+        txtAdd.Focus();
       }
       else
       {
@@ -45,6 +46,7 @@ namespace ScoreCounter
       txtAverage.Text = "";
       txtTotal.Text = "";
       txtCount.Text = "";
+      txtAdd.Focus();
     }
 
     private void buttExit_Click(object sender, EventArgs e)
