@@ -36,5 +36,14 @@ namespace ScoreCounter
         MessageBox.Show("Please enter a number with no units.");
       }
     }
+
+    private void buttClear_Click(object sender, EventArgs e)
+    {
+      scoreTotal = 0;
+      scoreCount = 0;
+      txtAverage.Text = "";
+      txtTotal.Text = "";
+      txtCount.Text = "";
+    }
   }
 }

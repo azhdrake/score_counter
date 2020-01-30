@@ -93,6 +93,7 @@
       this.buttClear.TabIndex = 5;
       this.buttClear.Text = "Clear All";
       this.buttClear.UseVisualStyleBackColor = true;
+      this.buttClear.Click += new System.EventHandler(this.buttClear_Click);
       // 
       // buttExit
       // 
