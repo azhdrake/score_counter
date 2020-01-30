@@ -46,5 +46,10 @@ namespace ScoreCounter
       txtTotal.Text = "";
       txtCount.Text = "";
     }
+
+    private void buttExit_Click(object sender, EventArgs e)
+    {
+      this.Close();
+    }
   }
 }
